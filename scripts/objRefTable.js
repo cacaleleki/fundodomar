@@ -1,0 +1,72 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Behaviors.Sin,
+		C3.Behaviors.Platform,
+		C3.Behaviors.solid,
+		C3.Plugins.Text,
+		C3.Behaviors.Anchor,
+		C3.Plugins.TiledBg,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.Text.Acts.SetVisible,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Acts.ResetGlobals,
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Cnds.CompareVar
+	];
+};
+self.C3_JsPropNameTable = [
+	{Senóide: 0},
+	{inimigo: 0},
+	{Plataforma: 0},
+	{personagem23: 0},
+	{recompensa2: 0},
+	{Sólido: 0},
+	{Solido_base_terra: 0},
+	{SOlido_base3: 0},
+	{limbo: 0},
+	{Âncora: 0},
+	{Contagempontos: 0},
+	{GameOver: 0},
+	{Parabéns: 0},
+	{Venceu: 0},
+	{platataformamovel: 0},
+	{platataformamovel2: 0},
+	{platataformamovel3: 0},
+	{platataformamovel4: 0},
+	{Sprite: 0},
+	{inimigo2: 0},
+	{PlanoDeFundoEmBlocos: 0},
+	{fundo: 0},
+	{Sprite2: 0},
+	{casa: 0},
+	{vilao3: 0}
+];
+
+self.InstanceType = {
+	inimigo: class extends self.ISpriteInstance {},
+	personagem23: class extends self.ISpriteInstance {},
+	recompensa2: class extends self.ISpriteInstance {},
+	Solido_base_terra: class extends self.ISpriteInstance {},
+	SOlido_base3: class extends self.ISpriteInstance {},
+	limbo: class extends self.ISpriteInstance {},
+	Contagempontos: class extends self.ITextInstance {},
+	GameOver: class extends self.ITextInstance {},
+	Parabéns: class extends self.ITextInstance {},
+	Venceu: class extends self.ITextInstance {},
+	platataformamovel: class extends self.ISpriteInstance {},
+	platataformamovel2: class extends self.ISpriteInstance {},
+	platataformamovel3: class extends self.ISpriteInstance {},
+	platataformamovel4: class extends self.ISpriteInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	inimigo2: class extends self.ISpriteInstance {},
+	PlanoDeFundoEmBlocos: class extends self.ITiledBackgroundInstance {},
+	fundo: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	casa: class extends self.ISpriteInstance {},
+	vilao3: class extends self.ISpriteInstance {}
+}
